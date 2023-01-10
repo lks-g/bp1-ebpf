@@ -2,32 +2,43 @@
 \thispagestyle {plain}
 \contentsline {section}{\'{U}vod}{1}{section*.1}%
 \contentsline {section}{\numberline {1}Teoretické základy eBPF}{2}{section.2}%
-\contentsline {subsection}{\numberline {1.1}Čo je eBPF}{2}{subsection.3}%
-\contentsline {subsection}{\numberline {1.2}História eBPF}{2}{subsection.4}%
-\contentsline {subsection}{\numberline {1.3}Princípy eBPF}{3}{subsection.5}%
-\contentsline {subsubsection}{\numberline {1.3.1}Ako funguje eBPF}{3}{subsubsection.6}%
-\contentsline {subsubsection}{\numberline {1.3.2}Ako sa píšu programy eBPF}{3}{subsubsection.7}%
-\contentsline {subsubsection}{\numberline {1.3.3}Kompilácia JIT}{3}{subsubsection.8}%
-\contentsline {subsubsection}{\numberline {1.3.4}eBPF Maps}{3}{subsubsection.9}%
-\contentsline {subsubsection}{\numberline {1.3.5}eBPF Helpers}{3}{subsubsection.10}%
-\contentsline {subsection}{\numberline {1.4}Použitie eBPF}{4}{subsection.11}%
-\contentsline {subsubsection}{\numberline {1.4.1}Bezpečnosť a eBPF}{4}{subsubsection.12}%
-\contentsline {subsection}{\numberline {1.5}eBPF Nástroje}{5}{subsection.13}%
-\contentsline {subsubsection}{\numberline {1.5.1}Knižnica libbpf C/C++}{5}{subsubsection.14}%
-\contentsline {subsubsection}{\numberline {1.5.2}BCC}{5}{subsubsection.15}%
-\contentsline {subsubsection}{\numberline {1.5.3}bpftrace}{5}{subsubsection.16}%
-\contentsline {subsubsection}{\numberline {1.5.4}Knižnica eBPF Go}{6}{subsubsection.17}%
-\contentsline {subsubsection}{\numberline {1.5.5}Seccomp}{6}{subsubsection.18}%
-\contentsline {subsubsection}{\numberline {1.5.6}LSM (Linux Security Modules)}{6}{subsubsection.19}%
-\contentsline {subsubsection}{\numberline {1.5.7}KRSI}{7}{subsubsection.20}%
-\contentsline {subsubsection}{\numberline {1.5.8}KRSI vs Landlock}{7}{subsubsection.21}%
-\contentsline {subsection}{\numberline {1.6}Limity eBPF}{7}{subsection.22}%
-\contentsline {section}{\numberline {2}Aplikácie eBPF v oblasti zabezpečenia operačných systémov}{8}{section.23}%
-\contentsline {section}{\numberline {3}Návrh eBPF programu}{9}{section.24}%
-\contentsline {section}{\numberline {4}Implementácia vlastného riešenia pomocou eBPF}{10}{section.25}%
-\contentsline {section}{\numberline {5}Testovanie a vyhodnotenie výsledkov implementácie}{11}{section.26}%
-\contentsline {section}{Z\'{a}ver}{12}{section*.27}%
-\contentsline {section}{Zoznam pou\v {z}itej literat\'{u}ry}{13}{section*.28}%
+\contentsline {subsection}{\numberline {1.1}História eBPF}{2}{subsection.3}%
+\contentsline {subsection}{\numberline {1.2}Princípy eBPF}{3}{subsection.4}%
+\contentsline {subsubsection}{\numberline {1.2.1}Ako funguje eBPF}{3}{subsubsection.5}%
+\contentsline {subsubsection}{\numberline {1.2.2}Ako sa píšu programy eBPF}{3}{subsubsection.6}%
+\contentsline {subsection}{\numberline {1.3}Architektúra eBPF}{3}{subsection.7}%
+\contentsline {subsubsection}{\numberline {1.3.1}Kompilácia JIT}{3}{subsubsection.8}%
+\contentsline {subsubsection}{\numberline {1.3.2}eBPF Maps}{3}{subsubsection.9}%
+\contentsline {subsubsection}{\numberline {1.3.3}eBPF Helpers}{4}{subsubsection.10}%
+\contentsline {subsection}{\numberline {1.4}eBPF nástroje}{4}{subsection.11}%
+\contentsline {subsubsection}{\numberline {1.4.1}Knižnica libbpf C/C++}{4}{subsubsection.12}%
+\contentsline {subsubsection}{\numberline {1.4.2}BCC}{4}{subsubsection.13}%
+\contentsline {subsubsection}{\numberline {1.4.3}bpftrace}{4}{subsubsection.14}%
+\contentsline {subsubsection}{\numberline {1.4.4}Knižnica eBPF Go}{5}{subsubsection.15}%
+\contentsline {subsection}{\numberline {1.5}Použitie eBPF}{5}{subsection.16}%
+\contentsline {subsubsection}{\numberline {1.5.1}Bezpečnosť a eBPF}{5}{subsubsection.17}%
+\contentsline {subsubsection}{\numberline {1.5.2}Seccomp}{6}{subsubsection.18}%
+\contentsline {subsubsection}{\numberline {1.5.3}LSM (Linux Security Modules)}{6}{subsubsection.19}%
+\contentsline {subsubsection}{\numberline {1.5.4}KRSI}{7}{subsubsection.20}%
+\contentsline {section}{\numberline {2}Aplikácie eBPF}{8}{section.21}%
+\contentsline {subsubsection}{\numberline {2.0.1}Detekcia útokov}{8}{subsubsection.22}%
+\contentsline {section}{\numberline {3}Porovnanie eBPF s inými nástrojmi}{9}{section.23}%
+\contentsline {section}{\numberline {4}Implementácia vlastného riešenia pomocou eBPF}{10}{section.24}%
+\contentsline {section}{\numberline {5}Testovanie a vyhodnotenie výsledkov implementácie}{11}{section.25}%
+\contentsline {section}{Z\'{a}ver}{12}{section*.26}%
+\contentsline {section}{Zoznam pou\v {z}itej literat\'{u}ry}{13}{section*.27}%
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
 \babel@toc {slovak}{}\relax 
 \babel@toc {slovak}{}\relax 
 \babel@toc {slovak}{}\relax 

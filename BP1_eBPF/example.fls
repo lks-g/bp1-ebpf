@@ -1490,6 +1490,7 @@ INPUT .\includes\core.tex
 INPUT includes\core.tex
 INPUT .\includes\core.tex
 INPUT includes\core.tex
+INPUT D:\Main\Programs\MikTeX\MiKTeX\fonts\tfm\public\lm\ec-lmri12.tfm
 INPUT D:\Main\Programs\MikTeX\MiKTeX\fonts\tfm\public\lm\ec-lmr12.tfm
 INPUT D:\Main\Programs\MikTeX\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT D:\Main\Programs\MikTeX\MiKTeX\tex\latex\lm\t1lmtt.fd
@@ -1509,14 +1510,13 @@ INPUT includes\conclusion.tex
 INPUT .\includes\conclusion.tex
 INPUT .\includes\conclusion.tex
 INPUT includes\conclusion.tex
-INPUT D:\Main\Programs\MikTeX\MiKTeX\fonts\tfm\public\lm\ec-lmri12.tfm
 INPUT example.aux
 INPUT .\example.out
 INPUT .\example.out
 INPUT example.run.xml
 OUTPUT example.run.xml
-INPUT D:\Main\Programs\MikTeX\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
 INPUT D:\Main\Programs\MikTeX\MiKTeX\fonts\enc\dvips\lm\lm-ts1.enc
+INPUT D:\Main\Programs\MikTeX\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
 INPUT D:\Main\Programs\MikTeX\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
 INPUT D:\Main\Programs\MikTeX\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
 INPUT D:\Main\Programs\MikTeX\MiKTeX\fonts\type1\public\lm\lmr12.pfb

@@ -55,6 +55,66 @@
       \verb https://ebpf.io/
       \endverb
     \endentry
+    \entry{history}{online}{}
+      \name{author}{1}{}{%
+        {{hash=d8648e983929da65e94613da32059bc4}{%
+           family={Carter},
+           familyi={C\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{d8648e983929da65e94613da32059bc4}
+      \strng{fullhash}{d8648e983929da65e94613da32059bc4}
+      \strng{bibnamehash}{d8648e983929da65e94613da32059bc4}
+      \strng{authorbibnamehash}{d8648e983929da65e94613da32059bc4}
+      \strng{authornamehash}{d8648e983929da65e94613da32059bc4}
+      \strng{authorfullhash}{d8648e983929da65e94613da32059bc4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introducing Container Observability with eBPF}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://sysdig.com/blog/introducing-container-observability-with-ebpf-and-sysdig/
+      \endverb
+      \verb{url}
+      \verb https://sysdig.com/blog/introducing-container-observability-with-ebpf-and-sysdig/
+      \endverb
+    \endentry
+    \entry{wiki}{online}{}
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{%
+           family={Wikipedia},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Berkeley Packet Filter}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Berkeley_Packet_Filter
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Berkeley_Packet_Filter
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
