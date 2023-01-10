@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.11.25) (preloaded format=pdflatex 2022.12.8)  6 JAN 2023 14:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.11.25) (preloaded format=pdflatex 2022.12.8)  10 JAN 2023 10:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1072,15 +1072,42 @@ Package hyperref Info: Link coloring ON on input line 17.
 
 {C:/Users/endyg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [1] (includes/abstract.tex) [2] (includes/abstractEN.tex) [3
 
-] (example.acr) [4
+] (includes/thanks.tex) [4
 
-] (includes/introduction.tex) [1
+] (example.toc
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3.
+ (D:\Main\Programs\MikTeX\MiKTeX\tex/latex/lm\ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3.
+ (D:\Main\Programs\MikTeX\MiKTeX\tex/latex/lm\omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 3.
+ (D:\Main\Programs\MikTeX\MiKTeX\tex/latex/lm\omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 3.
+ (D:\Main\Programs\MikTeX\MiKTeX\tex/latex/lm\omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 3.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 3.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 3.
+)
+\tf@toc=\write8
+\openout8 = `example.toc'.
+
+ [5] (example.acr) [6] (includes/introduction.tex) [1
 
 
 
 
 ] (includes/core.tex
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 10.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 14.
  (D:\Main\Programs\MikTeX\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1089,59 +1116,39 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [2]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 26.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 30.
  (D:\Main\Programs\MikTeX\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [3] [4] [5]
-Overfull \hbox (0.45079pt too wide) in paragraph at lines 102--106
+) [3] [4] [5] [6]
+Overfull \hbox (0.45079pt too wide) in paragraph at lines 105--109
 \T1/lmr/m/n/12 (-20) kov. KRSI expor-tuje novú hie-rar-chiu sú-bo-ro-vého sys-tému pod \T1/lmtt/m/n/12 /sys/kernel/security/bpf
  []
 
-[6]) [7]
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 43.
- (D:\Main\Programs\MikTeX\MiKTeX\tex/latex/lm\ot1lmr.fd
-File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 43.
- (D:\Main\Programs\MikTeX\MiKTeX\tex/latex/lm\omllmm.fd
-File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 43.
- (D:\Main\Programs\MikTeX\MiKTeX\tex/latex/lm\omslmsy.fd
-File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 43.
- (D:\Main\Programs\MikTeX\MiKTeX\tex/latex/lm\omxlmex.fd
-File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 43.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 43.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 43.
- [8
+[7] [8] [9] [10]) [11] (includes/conclusion.tex) [12
+
+
+] [13
 
 
 ] (example.aux)
 Package rerunfilecheck Info: File `example.out' has not changed.
-(rerunfilecheck)             Checksum: B4EC8EE51855EA3FCB1BFE8F554F288F;1928.
+(rerunfilecheck)             Checksum: 18B2194349EBD923D753DC76DE37F41B;4269.
 Package logreq Info: Writing requests to 'example.run.xml'.
 \openout1 = `example.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30879 strings out of 475281
- 538800 string characters out of 2780631
- 1403987 words of memory out of 3000000
- 51725 multiletter control sequences out of 15000+600000
- 525064 words of font info for 116 fonts, out of 8000000 for 9000
+ 30933 strings out of 475281
+ 539756 string characters out of 2780631
+ 1407007 words of memory out of 3000000
+ 51747 multiletter control sequences out of 15000+600000
+ 525252 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 123i,5n,131p,2278b,2845s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 123i,5n,131p,2278b,2841s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {D:/Main/Programs/MikTeX/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{D:/Main/Programs/MikTeX/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<D:/Main/Programs/MikTeX/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><D:/Main/Programs/MikTeX/MiKTeX/fonts/type1/public/lm/lmr12.pfb><D:/Main/Programs/MikTeX/MiKTeX/fonts/type1/public/lm/lmri12.pfb><D:/Main/Programs/MikTeX/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on example.pdf (13 pages, 141918 bytes).
+Output written on example.pdf (20 pages, 161353 bytes).
 PDF statistics:
- 156 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 500000)
- 33401 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 271 PDF objects out of 1000 (max. 8388607)
+ 50 named destinations out of 1000 (max. 500000)
+ 33505 words of extra memory for PDF output out of 35830 (max. 10000000)
 
