@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.11.25) (preloaded format=pdflatex 2022.12.8)  10 JAN 2023 18:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.11.25) (preloaded format=pdflatex 2022.12.8)  11 JAN 2023 17:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -971,7 +971,10 @@ Package biblatex Warning: Load 'inputenc' before biblatex.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 17.
 (D:\Main\Programs\MikTeX\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (example.aux)
+) (example.aux (D:\Main\Programs\MikTeX\MiKTeX\tex/generic/babel/locale/en\babel-english.tex
+Package babel Info: Importing basic data for english
+(babel)             from babel-en.ini. Reported on input line 11.
+))
 \openout1 = `example.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
@@ -1005,6 +1008,20 @@ Package biblatex Info: Trying to load language 'slovak'...
 Package biblatex Info: ... file 'slovak.lbx' found.
  (D:\Main\Programs\MikTeX\MiKTeX\tex/latex/biblatex/lbx\slovak.lbx
 File: slovak.lbx 2022/07/12 v3.18b biblatex localization (PK/MW)
+))
+Package biblatex Info: Trying to load language 'english' -> 'english-iso'...
+Package biblatex Info: ... file 'english-iso.lbx' found.
+ (D:\Main\Programs\MikTeX\MiKTeX\tex/latex/biblatex-iso690\english-iso.lbx
+File: english-iso.lbx 2022/03/20 v0.4.1 ISO 690 extended biblatex localization
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (D:\Main\Programs\MikTeX\MiKTeX\tex/latex/biblatex/lbx\english.lbx
+File: english.lbx 2022/07/12 v3.18b biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (D:\Main\Programs\MikTeX\MiKTeX\tex/latex/biblatex/lbx\english.lbx
+File: english.lbx 2022/07/12 v3.18b biblatex localization (PK/MW)
 ))
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Data encoding 'utf8' specified.
@@ -1115,45 +1132,41 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [2] [3]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 46.
+ [2]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 34.
  (D:\Main\Programs\MikTeX\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [4] [5] [6]
-Overfull \hbox (0.45079pt too wide) in paragraph at lines 122--126
-\T1/lmr/m/n/12 (-20) kov. KRSI expor-tuje novú hie-rar-chiu sú-bo-ro-vého sys-tému pod \T1/lmtt/m/n/12 /sys/kernel/security/bpf
- []
-
-[7]
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 133.
-
-[8] [9] [10]) [11] (includes/conclusion.tex) [12
+) [3] [4] [5] [6] [7] [8] [9] [10] [11] [12]) [13] (includes/conclusion.tex) [14
 
 
-] [13
+] [15
 
 
 ] (example.aux)
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `example.out' has not changed.
-(rerunfilecheck)             Checksum: 9D859FB9737876ADBFB0EF79DE083515;4016.
+(rerunfilecheck)             Checksum: 20D847215A2C5DD4E4B2888951F676B0;4480.
+
+Package biblatex Warning: Please rerun LaTeX.
+
 Package logreq Info: Writing requests to 'example.run.xml'.
 \openout1 = `example.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30948 strings out of 475281
- 540095 string characters out of 2780631
- 1407089 words of memory out of 3000000
- 51753 multiletter control sequences out of 15000+600000
- 525724 words of font info for 122 fonts, out of 8000000 for 9000
+ 31131 strings out of 475281
+ 544444 string characters out of 2780631
+ 1432497 words of memory out of 3000000
+ 51900 multiletter control sequences out of 15000+600000
+ 526654 words of font info for 130 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 123i,5n,131p,2278b,2843s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 123i,5n,131p,2278b,4652s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {D:/Main/Programs/MikTeX/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{D:/Main/Programs/MikTeX/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<D:/Main/Programs/MikTeX/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><D:/Main/Programs/MikTeX/MiKTeX/fonts/type1/public/lm/lmr12.pfb><D:/Main/Programs/MikTeX/MiKTeX/fonts/type1/public/lm/lmri12.pfb><D:/Main/Programs/MikTeX/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on example.pdf (20 pages, 171934 bytes).
+Output written on example.pdf (22 pages, 188414 bytes).
 PDF statistics:
- 274 PDF objects out of 1000 (max. 8388607)
- 51 named destinations out of 1000 (max. 500000)
- 33497 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 310 PDF objects out of 1000 (max. 8388607)
+ 58 named destinations out of 1000 (max. 500000)
+ 33513 words of extra memory for PDF output out of 35830 (max. 10000000)
 

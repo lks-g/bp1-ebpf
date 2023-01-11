@@ -115,6 +115,110 @@
       \verb https://en.wikipedia.org/wiki/Berkeley_Packet_Filter
       \endverb
     \endentry
+    \entry{book1}{book}{}
+      \name{author}{1}{}{%
+        {{hash=43886f3c9e02ddddd3c6a84bddf71808}{%
+           family={Rice},
+           familyi={R\bibinitperiod},
+           given={Liz},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly Media, Inc.}%
+      }
+      \strng{namehash}{43886f3c9e02ddddd3c6a84bddf71808}
+      \strng{fullhash}{43886f3c9e02ddddd3c6a84bddf71808}
+      \strng{bibnamehash}{43886f3c9e02ddddd3c6a84bddf71808}
+      \strng{authorbibnamehash}{43886f3c9e02ddddd3c6a84bddf71808}
+      \strng{authornamehash}{43886f3c9e02ddddd3c6a84bddf71808}
+      \strng{authorfullhash}{43886f3c9e02ddddd3c6a84bddf71808}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{langid}{english}
+      \field{title}{What Is eBPF?}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.oreilly.com/library/view/what-is-ebpf/9781492097266/
+      \endverb
+      \verb{url}
+      \verb https://www.oreilly.com/library/view/what-is-ebpf/9781492097266/
+      \endverb
+    \endentry
+    \entry{kernel}{online}{}
+      \name{author}{3}{}{%
+        {{hash=5579f12b0473820244e38591601a20e1}{%
+           family={Keniston},
+           familyi={K\bibinitperiod},
+           given={Jim},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1858b083333ae802e994e2cdb684dc7a}{%
+           family={Panchamukhi},
+           familyi={P\bibinitperiod},
+           given={Prasanna\bibnamedelima S},
+           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=a20a1cb7152e3b033bb6b6e1d48a3ff6}{%
+           family={Hiramatsu},
+           familyi={H\bibinitperiod},
+           given={Masami},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{3d7dc5c4401e86fa6d87d32042d095b6}
+      \strng{fullhash}{3d7dc5c4401e86fa6d87d32042d095b6}
+      \strng{bibnamehash}{3d7dc5c4401e86fa6d87d32042d095b6}
+      \strng{authorbibnamehash}{3d7dc5c4401e86fa6d87d32042d095b6}
+      \strng{authornamehash}{3d7dc5c4401e86fa6d87d32042d095b6}
+      \strng{authorfullhash}{3d7dc5c4401e86fa6d87d32042d095b6}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Kernel Probes (Kprobes)}
+      \field{urlday}{11}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.kernel.org/doc/Documentation/kprobes.txt
+      \endverb
+      \verb{url}
+      \verb https://www.kernel.org/doc/Documentation/kprobes.txt
+      \endverb
+    \endentry
+    \entry{oracle}{online}{}
+      \name{author}{1}{}{%
+        {{hash=50f87cfffa980a23e96f0eff8836b047}{%
+           family={Maguire},
+           familyi={M\bibinitperiod},
+           given={Alan},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{50f87cfffa980a23e96f0eff8836b047}
+      \strng{fullhash}{50f87cfffa980a23e96f0eff8836b047}
+      \strng{bibnamehash}{50f87cfffa980a23e96f0eff8836b047}
+      \strng{authorbibnamehash}{50f87cfffa980a23e96f0eff8836b047}
+      \strng{authornamehash}{50f87cfffa980a23e96f0eff8836b047}
+      \strng{authorfullhash}{50f87cfffa980a23e96f0eff8836b047}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Taming Tracepoints in the Linux Kernel}
+      \field{urlday}{11}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://blogs.oracle.com/linux/post/taming-tracepoints-in-the-linux-kernel
+      \endverb
+      \verb{url}
+      \verb https://blogs.oracle.com/linux/post/taming-tracepoints-in-the-linux-kernel
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
