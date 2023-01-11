@@ -95,12 +95,15 @@ Po naprogramovaní a skompilovaní eBPF programu sa následne tento program dá 
 V tejto sekcií sa budeme zaoberať rôznymi mechanizmami ktoré nám eBPF ponúka. Pozrieme sa bližšie na preklad kódu cez 
 kompilátory JIT a LLVM, eBPF mapy a eBPF helpre. 
 
-\subsection{Still in Progress}
-
 \subsubsection{Kompilácia cez JIT}
-Krok kompilácie \texttt{Just-in-Time} (\texttt{JIT}) prekladá všeobecný bajtový kód programu do inštrukčnej sady špecifickej pre 
-stroj s cieľom optimalizovať rýchlosť vykonávania programu. Vďaka tomu sa programy eBPF spúšťajú rovnako efektívne ako natívne 
-skompilovaný kód jadra alebo ako kód načítaný ako modul jadra.
+Kompilátor JIT (Just-In-Time) je typ kompilátora, ktorý generuje strojový kód počas behu, a nie vopred ako tradičné kompilátory. 
+Kompilátor zoberie vloženú reprezentáciu kódu  väčšinou vo forme bytekódu alebo assembleru a konvertuje ju na strojový kód, ktorý môže byť vykonaný priamo procesorom. 
+Hlavnou výhodou používania JIT je, že umožňuje efektívnejšie vykonávanie kódu, pretože tento kompilátor môže optimalizovať kód špeciálne pre prostredie behu, 
+napríklad pre konkrétnu architektúru procesora a dostupné pamäťové zdroje. Vďaka tomu sa programy eBPF spúšťajú rovnako efektívne ako natívne skompilovaný 
+kód jadra alebo ako kód načítaný, ako modul jadra. Taktiež má  schopnosť dynamicky prekompilovať kód počas behu programu, vďaka čomu sa dokáže prispôsobiť 
+meniacim podmienkam behu a ďalej zvyšovať výkon. V prípade eBPF, JIT kompilácia znamená, že eBPF programy sa kompilujú do strojového kódu priamo v jadre Linuxu, 
+keď sa spúšťajú. Tým sa dosiahne vyššia rýchlosť a nižšia spotreba pamäte oproti interpretácii eBPF programu v jadre. JIT kompilácia eBPF programov sa 
+často používa v kombinácii s "bpf-to-bpf" helpermi , ktorí umožňujú vykonávať viac krokov filtrácie v jednej iterácii, čo vedie k vyššej efektivite a rýchlosti.
 
 \subsubsection*{Požadované oprávnenia}
 Pokiaľ nie je povolený neprivilegovaný eBPF, všetky procesy, ktoré majú v úmysle načítať programy eBPF do jadra Linuxu, 
@@ -133,7 +136,7 @@ extrahovať prostredníctvom bočného kanála.
 Konštantné zaslepenie: 
 Všetky konštanty v kóde sú zaslepené, aby sa zabránilo útokom JIT spraying.
 
-\subsubsection{Kompilácia cez LLVM}
+%\subsubsection{Kompilácia cez LLVM}
 
 \subsubsection{eBPF Maps}
 Dôležitým aspektom programov eBPF je schopnosť zdieľať zhromaždené informácie a ukladať stav. 
@@ -157,20 +160,28 @@ Príklady dostupných pomocných volaní:
 Programovanie eBPF je neuveriteľne výkonné, ale aj zložité. Z toho dôvodu vzniklo niekoľko projektov a dodávateľov, 
 ktorí stavajú na platforme eBPF s cieľom vytvoriť novú generáciu nástrojov, ktoré budú pokrývať pozorovateľnosť, bezpečnosť, sieťovanie a ďalej.
 
+%\subsubsection{Kompilátory}
+%\subsubsection{Debuggery}
+%\subsubsection{Profilery} 
+%\subsubsection{Vizualizátory} 
+
+\subsection{Knižnice eBPF} 
+eBPF knižnice predstavujú sadu funkcií a rozhraní, ktoré uľahčujú prácu s eBPF, poskytujúc rôzne funkcie pre vývoj a správu eBPF programov. Tieto knižnice umožňujú vývojárom a administrátorom systémov pracovať s eBPF bez potreby hlbokých znalostí jadra Linuxu, pričom poskytujú silné a flexibilné možnosti pre prácu s eBPF programami. Ako bolo už spomínané vyššie knižnice eBPF umožňujú vývojárom pracovať s eBPF programami v jazykoch s vyššou úrovňou, ako napríklad Python alebo Lua, a uľahčujú rôzne úlohy ako napríklad kompiláciu, ladenie, spúšťanie a zaznamenávanie výstupu eBPF programov. 
+
 \subsubsection{Knižnica libbpf C/C++}
-je generická knižnica eBPF založená na jazyku C/C++, ktorá pomáha oddeliť načítavanie objektových súborov 
-eBPF generovaných kompilátorom clang/LLVM do jadra a vo všeobecnosti abstrahuje interakciu so systémovým volaním BPF 
-poskytovaním ľahko použiteľných API knižníc pre aplikácie.
+je generická knižnica eBPF založená na jazyku C/C++, ktorá pomáha oddeliť načítavanie objektových súborov  eBPF generovaných kompilátorom clang/LLVM do jadra a vo 
+všeobecnosti abstrahuje interakciu so systémovým volaním BPF poskytovaním ľahko použiteľných API knižníc pre aplikácie. Dôležitá poznámka k tejto knižnici. 
+Keďže obsahuje informácie o formáte typu BPF (BTF). Je potrebné použiť konfiguráciu jadra, ktoré má pri kompilácii nastavené \texttt{CONFIG\_DEBUG\_INFO\_BTF=y}. 
+V prípade, že vaša distribúcia Linuxu nemá toto nastavenie povolené je potrebná manuálna konfigurácia.
 
 \subsubsection{Knižnica BCC}
-Umožňuje používateľom písať programy v jazyku python s vloženými programami eBPF.  
-Tento framework je primárne zameraný na prípady použitia, ktoré zahŕňajú profilovanie/sledovanie aplikácií a systémov, 
-kde sa program eBPF používa na zber štatistík alebo generovanie udalostí. V používateľskom priestore zbiera údaje 
-a zobrazuje ich v ľudsky čitateľnej forme. 
+BCC je sada nástrojov na vytváranie efektívnych programov na sledovanie a manipuláciu s jadrom. Väčšina funkcií ktorú BCC používa, vyžaduje Linux 4.1 a vyšší. 
+BCC uľahčuje písanie programov BPF vďaka inštrumentácii jadra v jazyku C a front-endom v jazykoch Python a lua. Je vhodná na mnohé úlohy vrátane analýzy výkonu a 
+riadenia sieťovej prevádzky.
 
 \subsubsection{Knižnica eBPF Go}
-poskytuje všeobecnú knižnicu eBPF, ktorá oddeľuje proces získania bajtkódu eBPF, načítanie a správu programov eBPF. 
-Programy eBPF sa zvyčajne vytvárajú napísaním jazyka vyššej úrovne a potom sa pomocou kompilátora clang/LLVM skompilujú do bajtkódu eBPF.
+eBPF Go je knižnica jazyka Go, ktorá poskytuje nástroje na načítanie, kompiláciu a ladenie programov eBPF. Má minimálne externé závislosti a je určená na používanie 
+v dlhodobo bežiacich procesoch. 
 
 \subsection{Použitie eBPF}
 \subsubsection{Bezpečnosť a eBPF}
@@ -210,11 +221,11 @@ K danému háku môže byť pripojených viac ako jeden program.
 Pri každom volaní bezpečnostného háku sa postupne zavolajú všetky pripojené programy BPF, a ak niektorý program BPF vráti chybový stav, 
 požadovaná akcia sa zamietne.
 
-\section{Aplikácie eBPF}
-\subsection{Detekcia útokov}
-\section{Porovnanie eBPF s inými nástrojmi}
-\section{Implementácia vlastného riešenia pomocou eBPF}
-\section{Vyhodnotenie a porovnanie výsledkov implementácie}
+%\section{Aplikácie eBPF}
+%\subsection{Detekcia útokov}
+%\section{Porovnanie eBPF s inými nástrojmi}
+%\section{Implementácia vlastného riešenia pomocou eBPF}
+%\section{Vyhodnotenie a porovnanie výsledkov implementácie}
 
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.11.25) (preloaded format=pdflatex 2022.12.8)  11 JAN 2023 17:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.11.25) (preloaded format=pdflatex 2022.12.8)  11 JAN 2023 21:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1136,10 +1136,10 @@ Package microtype Info: Loading generic protrusion settings for font family
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 34.
  (D:\Main\Programs\MikTeX\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [3] [4] [5] [6] [7] [8] [9] [10] [11] [12]) [13] (includes/conclusion.tex) [14
+) [3] [4] [5] [6] [7] [8] [9]) [10] (includes/conclusion.tex) [11
 
 
-] [15
+] [12
 
 
 ] (example.aux)
@@ -1147,7 +1147,7 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `example.out' has not changed.
-(rerunfilecheck)             Checksum: 20D847215A2C5DD4E4B2888951F676B0;4480.
+(rerunfilecheck)             Checksum: 8D090FFB812174BACED5E337A9359ABD;3212.
 
 Package biblatex Warning: Please rerun LaTeX.
 
@@ -1156,17 +1156,17 @@ Package logreq Info: Writing requests to 'example.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31131 strings out of 475281
- 544444 string characters out of 2780631
- 1432497 words of memory out of 3000000
- 51900 multiletter control sequences out of 15000+600000
+ 31118 strings out of 475281
+ 544301 string characters out of 2780631
+ 1430497 words of memory out of 3000000
+ 51896 multiletter control sequences out of 15000+600000
  526654 words of font info for 130 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  123i,5n,131p,2278b,4652s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {D:/Main/Programs/MikTeX/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{D:/Main/Programs/MikTeX/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<D:/Main/Programs/MikTeX/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><D:/Main/Programs/MikTeX/MiKTeX/fonts/type1/public/lm/lmr12.pfb><D:/Main/Programs/MikTeX/MiKTeX/fonts/type1/public/lm/lmri12.pfb><D:/Main/Programs/MikTeX/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on example.pdf (22 pages, 188414 bytes).
+Output written on example.pdf (19 pages, 184413 bytes).
 PDF statistics:
- 310 PDF objects out of 1000 (max. 8388607)
- 58 named destinations out of 1000 (max. 500000)
- 33513 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 267 PDF objects out of 1000 (max. 8388607)
+ 49 named destinations out of 1000 (max. 500000)
+ 33465 words of extra memory for PDF output out of 35830 (max. 10000000)
 
