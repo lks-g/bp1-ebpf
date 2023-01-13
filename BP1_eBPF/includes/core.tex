@@ -1,15 +1,17 @@
 \section{Teoretické základy eBPF}
+Táto kapitola je vypracovaná s pomocou internetovej stránky ebpf.io, kernel.org, oracle.com, sysdig.com a knihy od spisovateľky Liz Rice~\cite{eBPF, kernel, oracle, history, book1}
+
 V súčasnej dobe sa operačné systémy stávajú čoraz komplexnejšími, s rastúcim počtom aplikácií a služieb, ktoré sa na týchto systémoch spúšťajú, 
 rastie aj potreba zabezpečenia pred rôznymi bezpečnostnými rizikami a hrozbami. Jedným z nástrojov, ktorý sa používa na zlepšenie bezpečnosti v 
 operačných systémoch Linux, je eBPF (\emph{extended Berkeley Packet Filter}). Je to flexibilný a mocný nástroj, ktorý sa čoraz častejšie používa na 
 rôzne účely v operačných systémoch, ako je napríklad monitorovanie a filtrovanie sieťovej aktivity, optimalizáciu výkonu operačného systému, 
 alebo detegovanie útokov a škodlivého kódu. Taktiež je čoraz častejšie používaný pre implementáciu rôznych nástrojov slúžiacich na analýzu dát 
 a monitorovanie systémov, ako napríklad nástroj \emph{perf}, ktorý umožňuje profilovanie výkonu aplikácií v operačnom systéme. Pre maximálny výkon a 
-bezpečnosť systému je dôležité, aby bol eBPF správne nakonfigurovaný a používaný pretože môže spôsobiť veľké problémy pri zlom zaobchádzaní.~\cite{eBPF}
+bezpečnosť systému je dôležité, aby bol eBPF správne nakonfigurovaný a používaný pretože môže spôsobiť veľké problémy pri zlom zaobchádzaní.
 
 \subsection{História eBPF}
 História eBPF sa začína s technológiou nazývanou \emph{Berkeley Packet Filter} v skratke BPF, ktorá vznikla v národnom laboratóriu Lawrenca Berkeleyho, 
-kde ju 19. Decembra 1992 opísali Steven McCanne spolu s Vanom Jacobsonom. BPF bol navrhnutý ako jednoduchý jazyk pre filtrovanie sieťových paketov, 
+kde ju 19. Decembra 1992 opísali Steven McCanne spolu s Vanom Jacobsonom.~\cite{bpf} BPF bol navrhnutý ako jednoduchý jazyk pre filtrovanie sieťových paketov, 
 ktorý bol implementovaný ako rozšírenie jadra operačného systému. Jeho hlavným cieľom bolo umožniť používateľom filtrovať sieťové pakety bez nutnosti 
 používať externé nástroje ako napríklad \texttt{tcpdump}. BPF bol úspešne implementovaný v operačných systémoch ako \emph{BSD} a Linux a stal sa jedným z 
 kľúčových nástrojov pre sieťovú diagnostiku a analýzu. Avšak, s rastúcimi požiadavkami na funkcionalitu a výkon, bolo potrebné rozšíriť BPF o ďalšie možnosti. 
@@ -21,7 +23,7 @@ vykonávať viac operácií ako len filtrovanie sieťových paketov. V súčasno
 virtuálnom priestore (\emph{sandboxe}) v rámci jadra operačného systému. To znamená, že môže rozšíriť alebo dokonca upraviť spôsob, akým sa jadro správa 
 bez zmeny zdrojového kódu jadra. Programy spustené týmto spôsobom sú schopné monitorovať systém, zhromažďovať metriky, a dokonca aj vykonávať 
 rôzne úlohy ako napríklad sledovanie a upravovanie sieťovej aktivity. Vďaka týmto rozšíreniam sa eBPF stal veľmi flexibilným nástrojom pre 
-riešenie rôznych problémov v oblasti sieťovej diagnostiky, monitorovania systému a izolácie kontajnerov.~\cite{eBPF, history, wiki} 
+riešenie rôznych problémov v oblasti sieťovej diagnostiky, monitorovania systému a izolácie kontajnerov.
 
 \subsection{Princípy eBPF}
 Z úvodu vieme, že eBPF je veľmi silný nástroj pre vývojárov operačných systémov, ktorý poskytuje flexibilitu a vysoký výkon. 
@@ -40,9 +42,9 @@ Medzi hlavné princípy eBPF patrí:
     \item \textbf{Dynamická úprava kódu}: eBPF programy môžu byť dynamicky upravené, alebo nahradené bez nutnosti reštartovať systém, 
     čo umožňuje rýchlu a jednoduchú úpravu správania operačného systému.
     \item \textbf{Kontrola jadra OS}: eBPF programy umožňujú prístup k interným dátam jadra OS a tým pádom lepšie pochopenie a kontrolu 
-    nad chodom celého systému.~\cite{eBPF}
+    nad chodom celého systému.
 \end{itemize}
-\pagebreak
+%\pagebreak
 
 \subsubsection{Ako funguje eBPF} 
 eBPF je nástroj, ktorý sa používa na filtrovanie sieťovej aktivity, sledovanie výkonu a implementáciu bezpečnostných politík v operačných systémoch Linux. 
@@ -55,7 +57,7 @@ do hash tabuliek, ktoré sa potom dajú použiť na rôzne účely, napríklad s
 O eBPF mapách a eBPF pomocníkoch (\emph{helpers}) sa budeme viac zaoberať v sekcií \hyperref[sec:architecture]{1.3 Architektúra eBPF}. 
 Ďalej tento nástroj umožňuje implementovať rôzne bezpečnostné politiky, ako napríklad firewall, izolácia kontajnerov, a podobne. V skratke by sme mohli 
 funkciu eBPF popísať ako virtuálny počítač, ktorý beží v jadre OS a na základe vloženého bytekódu vykonáva operácie v rôznych častiach systému ako 
-napríklad ukladanie dát do máp, implementáciu bezpečnostných politík, alebo optimalizáciu výkonu systému.~\cite{eBPF}
+napríklad ukladanie dát do máp, implementáciu bezpečnostných politík, alebo optimalizáciu výkonu systému.
 
 \subsubsection{Vstupné body pre eBPF}
 \label{sec:hooks}
@@ -76,7 +78,7 @@ To znamená, že keď sa kód v jadre vykoná, môže sa volať vlastný kód, k
 jadre operačného systému a poskytujú eBPF programu prístup k rôznym systémovým udalostiam. Preddefinované háky zahŕňajú 
 systémové volania, vstup a výstup funkcií, sledovacie body jadra, sieťové udalosti a niekoľko ďalších. Pokiaľ pre konkrétnu 
 požiadavku neexistuje preddefinovaný hák, je možné vytvoriť \emph{kernel probe} (\texttt{kprobe}) alebo \emph{user probe} (\texttt{uprobe}) 
-na pripojenie eBPF programov takmer kdekoľvek v užívateľských aplikáciách alebo jadre.~\cite{eBPF, book1, kernel, oracle}
+na pripojenie eBPF programov takmer kdekoľvek v užívateľských aplikáciách alebo jadre.
 
 \subsubsection{Ako sa tvoria programy eBPF}
 eBPF programy sa píšu pomocou jazyka s nízkou úrovňou, ako je napríklad C. Keďže eBPF programy sú spustené v jadre systému, je dôležité, 
@@ -87,8 +89,7 @@ knižníc a nástrojov, ktoré umožňujú písať eBPF programy v jazykoch s vy
 Tieto nástroje pomáhajú vývojárom vytvárať eBPF programy bez potreby hlbokých znalosti jazyka C a pravidiel pre písanie bezpečných eBPF programov. 
 Pokiaľ, ale neexistuje abstrakcia vyššej úrovne, je potrebné programy písať priamo. Aj keď je samozrejme možné napísať \emph{bytecode} priamo, 
 bežnejšou vývojovou praxou je využitie kompilátora, ako je \textbf{LLVM}, na kompiláciu pseudo-C kódu do eBPF bajtkódu. 
-Po naprogramovaní a skompilovaní eBPF programu sa následne tento program dá nahrať do jadra linuxu pomocou komunikačného rozhrania \emph{bpf()}.~\cite{eBPF}
-\pagebreak
+Po naprogramovaní a skompilovaní eBPF programu sa následne tento program dá nahrať do jadra linuxu pomocou komunikačného rozhrania \emph{bpf()}.
 
 \subsection{Architektúra eBPF}
 \label{sec:architecture}
@@ -102,25 +103,34 @@ Hlavnou výhodou používania JIT je, že umožňuje efektívnejšie vykonávani
 napríklad pre konkrétnu architektúru procesora a dostupné pamäťové zdroje. Vďaka tomu sa programy eBPF spúšťajú rovnako efektívne ako natívne skompilovaný 
 kód jadra alebo ako kód načítaný, ako modul jadra. Taktiež má  schopnosť dynamicky prekompilovať kód počas behu programu, vďaka čomu sa dokáže prispôsobiť 
 meniacim podmienkam behu a ďalej zvyšovať výkon. V prípade eBPF, JIT kompilácia znamená, že eBPF programy sa kompilujú do strojového kódu priamo v jadre Linuxu, 
-keď sa spúšťajú. Tým sa dosiahne vyššia rýchlosť a nižšia spotreba pamäte oproti interpretácii eBPF programu v jadre.~\cite{eBPF}
+keď sa spúšťajú. Tým sa dosiahne vyššia rýchlosť a nižšia spotreba pamäte oproti interpretácii eBPF programu v jadre.
 
 \subsubsection{eBPF Maps}
-Dôležitým aspektom programov eBPF je schopnosť zdieľať zhromaždené informácie a ukladať stav. 
-Na tento účel môžu programy eBPF využívať koncept máp pre ukladanie a načítavanie údajov v širokom súbore dátových štruktúr.
-K mapám možno pristupovať z eBPF programov, ako aj z aplikácií v používateľskom priestore prostredníctvom systémového volania.~\cite{eBPF, book1}
+Dôležitým aspektom programov eBPF je schopnosť zdieľať zhromaždené informácie a ukladať stav. Na tento účel môžu programy eBPF využívať koncept máp. 
+eBPF mapami sa označuje jedna z dôležitých funkcií eBPF, ktorá umožňuje ukladať dáta v kerneli do hash tabuliek, ktoré sa potom dajú použiť na rôzne účely, 
+napríklad na sledovanie výkonu aplikácií, alebo na implementáciu rôznych bezpečnostných politík, ako napríklad firewall, izolácia kontajnerov a podobne. 
+Tiež sa dajú použiť pre implementáciu rôznych nástrojov pre analýzu dát a monitorovanie systémov. K mapám možno pristupovať z eBPF programov, 
+ako aj z aplikácií v používateľskom priestore prostredníctvom systémového volania.
 
 \subsubsection{eBPF Helpers}
-eBPF programy nemôžu volať ľubovoľné funkcie jadra. Ak by sa to povolilo, programy eBPF by sa viazali na konkrétne verzie jadra 
-a skomplikovala by sa kompatibilita programov. Namiesto toho môžu programy eBPF uskutočňovať volania funkcií do pomocných funkcií, 
-čo je dobre známe a stabilné API, ktoré jadro ponúka. Súbor dostupných pomocných volaní sa neustále vyvíja. ~\cite{eBPF, book1}
+eBPF programy nemôžu volať ľubovoľné funkcie jadra. Ak by sa to povolilo, programy eBPF by sa viazali na konkrétne verzie jadra a skomplikovala by sa 
+kompatibilita programov. Namiesto toho môžu programy eBPF uskutočňovať volania funkcií do pomocných (helper) funkcií. eBPF pomocníci (angl. Helpers) 
+sú rozšírenia jadra Linuxu, ktoré umožňujú programovať eBPF programy jednoduchšie a bezpečnejšie. Pomáhajú vytvárať a spravovať eBPF objekty, 
+ako sú programy, mapy a tracepointy, a tiež umožňujú komunikovať s jadrom bez nutnosti používať príkazy ako napr. netlink. eBPF Helpre tiež 
+poskytujú vysokú úroveň abstrakcie pre rôzne úlohy, ako napríklad sieťovú filtráciu, tj. riadenie prístupu sieťových paketov, a vyhodnocovanie štatistík. 
+To umožňuje vývojárom vytvárať aplikácie, ktoré využívajú silné a flexibilné možnosti eBPF, bez nutnosti mať hlboké znalosti jadra Linuxu. 
+Súbor dostupných pomocných volaní sa neustále vyvíja.
 Príklady dostupných pomocných volaní:
 \begin{itemize}
-    \item Prístup k mape eBPF
-    \item Generovanie náhodných čísel
-    \item Získať aktuálny čas a dátum
-    \item Získať kontext procesu/skupiny
-    \item Manipulácia so sieťovými paketmi a logika presmerovania
+\item Prístup k mape eBPF
+\item Generovanie náhodných čísel
+\item Získať aktuálny čas a dátum
+\item Získať kontext procesu/skupiny
+\item Manipulácia so sieťovými paketmi a logika presmerovania
 \end{itemize}
+
+Súbor obsahujúci všetky dostupné helper funkcie pre eBPF nájdete priamo v manuáli Linuxu. 
+\url{https://man7.org/linux/man-pages/man7/bpf-helpers.7.html}
 
 \subsection{eBPF nástroje}
 Ako ste mohli vydedukovať z doposiaľ získaných informácií, tvorba eBPF programov je náročný proces. Pre jeho zjednodušenie vzniklo a 
@@ -191,7 +201,11 @@ Programovanie eBPF je neuveriteľne výkonné, ale aj zložité. Z toho dôvodu 
 s cieľom vytvoriť novú generáciu nástrojov, ktoré budú pokrývať monitorovanie, bezpečnosť, sieťovanie a ďalej.
 
 \subsection{Knižnice eBPF} 
-eBPF knižnice predstavujú sadu funkcií a rozhraní, ktoré uľahčujú prácu s eBPF, poskytujúc rôzne funkcie pre vývoj a správu eBPF programov. Tieto knižnice umožňujú vývojárom a administrátorom systémov pracovať s eBPF bez potreby hlbokých znalostí jadra Linuxu, pričom poskytujú silné a flexibilné možnosti pre prácu s eBPF programami. Ako bolo už spomínané vyššie knižnice eBPF umožňujú vývojárom pracovať s eBPF programami v jazykoch s vyššou úrovňou, ako napríklad Python alebo Lua, a uľahčujú rôzne úlohy ako napríklad kompiláciu, ladenie, spúšťanie a zaznamenávanie výstupu eBPF programov. 
+eBPF knižnice predstavujú sadu funkcií a rozhraní, ktoré uľahčujú prácu s eBPF, poskytujúc rôzne funkcie pre vývoj a správu eBPF programov. 
+Tieto knižnice umožňujú vývojárom a administrátorom systémov pracovať s eBPF bez potreby hlbokých znalostí jadra Linuxu, pričom poskytujú 
+silné a flexibilné možnosti pre prácu s eBPF programami. Ako bolo už spomínané vyššie knižnice eBPF umožňujú vývojárom pracovať s eBPF programami 
+v jazykoch s vyššou úrovňou, ako napríklad Python alebo Lua, a uľahčujú rôzne úlohy ako napríklad kompiláciu, ladenie, spúšťanie a zaznamenávanie 
+výstupu eBPF programov. 
 
 \subsubsection{Knižnica libbpf}
 je generická knižnica eBPF založená na jazyku C/C++, ktorá pomáha oddeliť načítavanie objektových súborov  eBPF generovaných kompilátorom clang/LLVM do jadra a vo 
@@ -217,6 +231,18 @@ toto použitie prináša.
 \item \textbf{Sledovanie kódu}: eBPF sa môže použiť na sledovanie a profilovanie kódu v reálnom čase.
 \item \textbf{Ochrana pred útokmi}: eBPF sa môže použiť na detekciu a blokovanie škodlivého kódu v reálnom čase.
 \item \textbf{Firewall}: eBPF sa môže použiť ako firewall, ktorý je schopný vykonávať pokročilé filtrovanie sieťového provozu.
+\end{itemize}
+Nás bude, ale najviac zaujímať ako môže byť eBPF použité na zabezpečenie operačného systému Linux.
+\begin{itemize}
+    \item Kontrola sieťovej komunikácie: eBPF môže byť použitý na filtrovanie sieťovej aktivity, aby sa zabránilo nežiadúcemu prístupu alebo útoku. 
+    Môže tiež byť použitý na vyhľadávanie nebezpečných alebo podozrivých sieťových aktivít a upozornenie na ne.
+    \item Kontrola súborov: eBPF môže byť použitý na monitorovanie a kontrolu súborov v operačnom systéme, aby sa zabránilo neoprávnenému prístupu alebo útoku.
+    \item Kontrola procesov: eBPF môže byť použitý na monitorovanie a kontrolu procesov v operačnom systéme, aby sa zabránilo neoprávnenému použitiu 
+    alebo útoku na systém. Môže tiež byť použitý na detekciu a blokovanie nebezpečných procesov alebo aktivít.
+    \item Kontrola pamäte: eBPF môže byť použitý na monitorovanie a kontrolu používania pamäte v operačnom systéme, aby sa zabránilo zneužitiu 
+    alebo útoku na pamäť.
+    \item Kontrola systémových volaní: eBPF môže byť použitý na monitorovanie a kontrolu systémových volaní v operačnom systéme, 
+    aby sa zabránilo neoprávnenému použitiu alebo útoku.
 \end{itemize}
 
 \subsubsection{Bezpečnosť a eBPF}
@@ -265,41 +291,57 @@ Tento krok zahŕňa:
         \end{itemize}
     \item \textbf{Konštantné zaslepenie}: 
         \begin{itemize}
-            \item Všetky konštanty v kóde sú zaslepené, aby sa zabránilo útokom JIT spraying.~\cite{eBPF}
+            \item Všetky konštanty v kóde sú zaslepené, aby sa zabránilo útokom JIT spraying.
         \end{itemize}
 \end{itemize}
 
 \subsubsection{Seccomp}
-Mechanizmus seccomp() umožňuje procesu načítať BPF program na obmedzenie jeho budúceho používania systémových volaní.
-Jedná sa o jednoduchý, ale flexibilný mechanizmus sandboxingu, ktorý sa široko používa. 
-Tieto filtračné programy však bežia na "klasickom" virtuálnom stroji BPF, a nie na rozšírenom stroji eBPF, ktorý sa používa na iných miestach jadra. 
-Účelom programu BPF pod funkciou seccomp() je rozhodovať o tom, či má byť dané systémové volanie povolené.
+Jedným z prvých použití virtuálneho stroja BPF mimo siete bola implementácia politík kontroly prístupu pre systémové volanie seccomp(). 
+Secure computing mode alebo seccomp je bezpečnostná funkcia jadra Linux, ktorá umožňuje obmedzenie systémových volaní (syscalls), 
+ktoré môžu byť vykonávané procesom. Jedná sa o jednoduchý, ale flexibilný mechanizmus sandboxingu, ktorý sa široko používa. 
+Účelom programu BPF pod funkciou seccomp() je rozhodovať o tom, či má byť dané systémové volanie povolené. Filtračné programy 
+seccompu bežia na "klasickom" virtuálnom stroji BPF, a nie na eBPF. To ale neznamená, že nie je možné skombinovať seccomp s eBPF, 
+aj keď v čase písania tejto práce nie je možné úplne integrovať eBPF do systému seccomp kvôli bezpečnostným problémom. 
 Prechodom na eBPF by sa seccomp() programom sprístupnilo množstvo nových funkcií vrátane máp, pomocných funkcií, ukladania na jednotlivé úlohy, 
-expresívnejšej inštrukčnej sady a ďalších. 
-Programy pre eBPF možno písať v jazyku C, čo nie je možné pre programy klasického BPF. 
-Tento problém, viedol k vytvoreniu špeciálnych jazykov, ako je easyseccomp. 
-Kvôli bezpečnostným problémom nie je zatiaľ možné integrovať eBPF do systému seccomp()
-
-* Jedným z prvých použití virtuálneho stroja BPF mimo siete bola implementácia politík kontroly prístupu pre systémové volanie seccomp().
+expresívnejšej inštrukčnej sady a ďalších. Ako som už spomenul kombinácia eBPF s filtrom seccomp je možná, vyžaduje však úpravu predvolených 
+nastavení a konfiguráciu, ktorá by sa mala testovať a zohľadniť konkrétne požiadavky a potreby aplikácie predtým, než sa nasadí do produkčného 
+prostredia. eBPF môže byť použitý na implementáciu filtrov, ktoré kontrolujú a ovplyvňujú syscall, ktoré sú vykonávané procesom. 
+Kombinácia eBPF a seccomp filtra poskytuje viacúrovňovú ochranu pre systém, pretože eBPF filtre môžu byť použité na hlbšiu kontrolu syscallov, 
+kým seccomp filtre poskytnú základnú ochranu pred  ostatými nebezpečnými systémovými volaniami. Je dôležité tiež pamätať, že aj keď eBPF a 
+seccomp filtre poskytujú silnú ochranu pre systém, nie je to však jediné opatrenie pre zabezpečenie systému, pretože aj keď použitie eBPF a 
+seccomp filtra môže zabrániť nebezpečným syscallom vykonávaným eBPF programami, neznamená to že útoky, ktoré využívajú iné metódy, budú zabránené. 
+Ochrana systému musí byť komplexná a zahŕňať viacero prvkov a implementácie dobrej bezpečnostnej politiky.
 
 \subsubsection{LSM}
-Framework bezpečnostného modulu Linuxu (LSM) poskytuje mechanizmus na pripojenie rôznych bezpečnostných kontrol pomocou nových rozšírení jadra. 
-Primárnymi používateľmi rozhrania LSM sú rozšírenia MAC (Mandatory Access Control), ktoré poskytujú komplexnú bezpečnostnú politiku. 
-Okrem väčších rozšírení MAC možno pomocou rozhrania LSM vytvárať aj ďalšie rozšírenia, ktoré poskytujú špecifické zmeny fungovania systému, 
-ak tieto úpravy nie sú k dispozícii v základnej funkcii samotného systému Linux. Z pohľadu bezpečnostného správania sa lepšie mapuje na LSM ako na 
-filtre seccomp, ktoré sú založené na zachytávaní syscallov. Rôzne bezpečnostné správanie sa môže realizovať prostredníctvom viacerých systémových volaní, 
-takže by bolo ľahké jedno alebo viacero z nich prehliadnuť, zatiaľ čo hooky LSM zachytávajú správanie, ktoré je predmetom záujmu. 
+Linux Security Modules v skratke LSM je rozšírenie operačného systému Linux, ktoré umožňuje pridávať rôzne moduly pre zlepšenie zabezpečenia. 
+BPF je jedným z týchto modulov, ktorý môže byť použitý na rôzne účely, vrátane zlepšenia bezpečnosti operačného systému. BPF môže byť nakonfigurovaný tak, 
+aby filtroval sieťový prenos na základe rôznych kritérií, ako napríklad IP adresy, porty alebo protokoly. Týmto spôsobom môžete zabrániť 
+nežiaducim sieťovým prenosom, ako sú napríklad útoky DDoS, a zlepšiť zabezpečenie vašej siete. Ďalším spôsobom, ako je možné použiť LSM BPF 
+na zlepšenie bezpečnosti operačného systému, je kontrolou prístupu k systémovým objektom, ako sú súbory alebo procesy. Môžete nastaviť BPF tak, 
+aby kontroloval prístup k týmto objektom na základe rôznych kritérií, ako napríklad užívateľského mena alebo skupiny. Týmto spôsobom je možné 
+zlepšiť kontrolu prístupu k dôležitým systémovým objektom a zvýšiť bezpečnosť operačného systému. Framework bezpečnostného modulu Linuxu (LSM) 
+poskytuje mechanizmus na pripojenie rôznych bezpečnostných kontrol pomocou nových rozšírení jadra. Primárnymi používateľmi rozhrania LSM 
+sú rozšírenia MAC (Mandatory Access Control), ktoré poskytujú komplexnú bezpečnostnú politiku. Okrem väčších rozšírení MAC možno pomocou 
+rozhrania LSM vytvárať aj ďalšie rozšírenia, ktoré poskytujú špecifické zmeny fungovania systému, ak tieto úpravy nie sú k dispozícii 
+v základnej funkcii samotného systému Linux. Z pohľadu bezpečnostného správania sa lepšie mapuje na LSM ako na filtre seccomp, 
+ktoré sú založené na zachytávaní syscallov. Rôzne bezpečnostné správanie sa môže realizovať prostredníctvom viacerých systémových volaní, 
+takže by bolo ľahké jedno alebo viacero z nich prehliadnuť, zatiaľ čo háky LSM zachytávajú správanie, ktoré je predmetom záujmu. 
 Zámerom je, aby eBPF helpre boli "presné a granulárne". Na rozdiel od API sledovania BPF nebudú mať všeobecný prístup k vnútorným dátovým štruktúram jadra. 
-KRSI vyžaduje na svoju prácu \texttt{/CAP\_SYS\_ADMIN}.
-* \texttt{/CAP\_SYS\_ADMIN} je potrebný na vykonávanie celého radu administratívnych operácií, ktoré je ťažké z kontajnerov vypustiť, 
-ak sa v kontajneri vykonávajú privilegované operácie.
 
 \subsubsection{KRSI}
-Prototyp KRSI je implementovaný ako bezpečnostný modul Linuxu (LSM), ktorý umožňuje pripojenie programov eBPF k bezpečnostným hákom jadra.
-Hlavným cieľom KRSI je sledovať celkové správanie systému za účelom odhalenia útokov. 
-KRSI exportuje novú hierarchiu súborového systému pod \texttt{/sys/kernel/security/bpf} s jedným súborom pre každý hák.
-K danému háku môže byť pripojených viac ako jeden program.
-Pri každom volaní bezpečnostného háku sa postupne zavolajú všetky pripojené programy BPF, a ak niektorý program BPF vráti chybový stav, 
+Kernel Runtime Security Instrumentation, alebo v skratke KRSI je koncepcia, ktorá umožňuje vykonávať vlastný kód v jadre operačného systému v reálnom čase, 
+čo umožňuje vykonávať rôzne bezpečnostné úlohy. Jeho hlavným cieľom je sledovať celkové správanie systému za účelom odhalenia útokov.  
+eBPF je jazyk a platforma pre KRSI, ktorá umožňuje vývojárom naprogramovať vlastné eBPF programy, ktoré môžu byť spustené v jadre operačného systému. 
+Tieto programy môžu byť využité na rôzne úlohy, ako napríklad monitorovanie siete, detekciu útokov, bezpečnostnú kontrolu prístupu k súborom, a podobne. 
+\subsection*{Ako používať KRSI}
+Prototyp KRSI je implementovaný ako bezpečnostný modul Linuxu (LSM), ktorý umožňuje pripojenie programov eBPF k bezpečnostným hákom jadra. 
+Ak chcete používať KRSI, musíte mať najprv jadro, ktoré podporuje eBPF. Mnohé najnovšie distribúcie Linuxu majú podporu pre eBPF zabudovanú, 
+ale ak to tak nie je, budete musieť nainštalovať jadro s touto podporou. Po načítaní eBPF programov do jadra ich možno pripojiť k rôznym 
+funkciám jadra pomocou mechanizmu KRSI. To umožňuje, aby sa programy eBPF spustili vždy, keď sa tieto funkcie zavolajú, čo umožňuje dynamické 
+presadzovanie bezpečnostných politík. V prípade zabezpečenia operačného systému sa KRSI dá použiť na monitorovanie systému a zhromažďovanie údajov 
+o akomkoľvek podozrivom správaní, ako je napríklad pokus o neoprávnený prístup. KRSI exportuje novú hierarchiu súborového systému 
+pod \texttt{/sys/kernel/security/bpf} s jedným súborom pre každý hák. K danému háku môže byť pripojených viac ako jeden program a pri 
+každom volaní bezpečnostného háku sa postupne zavolajú všetky pripojené programy BPF. Ak niektorý program BPF vráti chybový stav, 
 požadovaná akcia sa zamietne.
 
 \section{Aplikácie eBPF}
@@ -336,12 +378,27 @@ Pár najznámejších si uvedieme v zozname nižšie.
     aby sa zabránilo nežiadúcemu prístupu k systémovým zdrojom.
     \item \textbf{FirewallD}: je firewall pre Linux, ktorý umožňuje správu firewallu prostredníctvom rozhrania D-Bus.
     \item \textbf{Iptables}: je klasický firewall nástroj pre Linux, ktorý poskytuje základnú kontrolu prístupu k sieťovej premávke.
-    \item \textbf{OpenSSH}: je nástroj pre zabezpečenie sieťového pripojenia, ktorý umožňuje bezpečné prihlásenie a komunikáciu prostredníctvom šifrovaných protokolov.
-    \item \textbf{Tripwire}: je nástroj na detekciu zmien v súborovom systéme, ktorý umožňuje detegovať nežiaduce zmeny v systéme a prijímať opatrenia na ich odstránenie.
+    \item \textbf{OpenSSH}: je nástroj pre zabezpečenie sieťového pripojenia, ktorý umožňuje bezpečné prihlásenie a komunikáciu 
+    prostredníctvom šifrovaných protokolov.
+    \item \textbf{Tripwire}: je nástroj na detekciu zmien v súborovom systéme, ktorý umožňuje detegovať nežiaduce zmeny v 
+    systéme a prijímať opatrenia na ich odstránenie.
 \end{itemize}
 
-%\section{Implementácia vlastného riešenia pomocou eBPF}
-%\section{Vyhodnotenie a porovnanie výsledkov implementácie}
+\section{Implementácia pomocou eBPF}
+Predbežným návrhom na implemetáciu sú malé programy zamerané na:
+\begin{enumerate}
+    \item Kontrolu súborov: eBPF môže byť použitý na monitorovanie a kontrolu súborov v operačnom systéme, aby sa zabránilo 
+    neoprávnenému prístupu alebo útoku.
+    \item Kontrolu procesov: eBPF môže byť použitý na monitorovanie a kontrolu procesov v operačnom systéme, aby sa zabránilo 
+    neoprávnenému použitiu alebo útoku. Môže tiež byť použitý na detekciu a blokovanie nebezpečných procesov alebo aktivít.
+    \item Kontrolu pamäte: eBPF môže byť použitý na monitorovanie a kontrolu používania pamäte v operačnom systéme, aby sa zabránilo zneužitiu 
+    alebo útoku na pamäť.
+    \item Kontrolu systémových volaní: eBPF môže byť použitý na monitorovanie a kontrolu systémových volaní v operačnom systéme, 
+    aby sa zabránilo neoprávnenému použitiu alebo útoku.
+    \item Ochranu pred fileless malware: eBPF môže byť použité pre demonštratívnu implementáciu ochrany pred fileless malwarom.
+\end{enumerate}
+
+\section{Výsledky implemetácie}
 
 
 

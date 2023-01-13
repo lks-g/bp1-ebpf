@@ -55,98 +55,6 @@
       \verb https://ebpf.io/
       \endverb
     \endentry
-    \entry{history}{online}{}
-      \name{author}{1}{}{%
-        {{hash=d8648e983929da65e94613da32059bc4}{%
-           family={Carter},
-           familyi={C\bibinitperiod},
-           given={Eric},
-           giveni={E\bibinitperiod}}}%
-      }
-      \strng{namehash}{d8648e983929da65e94613da32059bc4}
-      \strng{fullhash}{d8648e983929da65e94613da32059bc4}
-      \strng{bibnamehash}{d8648e983929da65e94613da32059bc4}
-      \strng{authorbibnamehash}{d8648e983929da65e94613da32059bc4}
-      \strng{authornamehash}{d8648e983929da65e94613da32059bc4}
-      \strng{authorfullhash}{d8648e983929da65e94613da32059bc4}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Introducing Container Observability with eBPF}
-      \field{urlday}{10}
-      \field{urlmonth}{1}
-      \field{urlyear}{2023}
-      \field{year}{2019}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://sysdig.com/blog/introducing-container-observability-with-ebpf-and-sysdig/
-      \endverb
-      \verb{url}
-      \verb https://sysdig.com/blog/introducing-container-observability-with-ebpf-and-sysdig/
-      \endverb
-    \endentry
-    \entry{wiki}{online}{}
-      \name{author}{1}{}{%
-        {{hash=9c677286866aad38f8e9b660f5411814}{%
-           family={Wikipedia},
-           familyi={W\bibinitperiod}}}%
-      }
-      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
-      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Berkeley Packet Filter}
-      \field{urlday}{10}
-      \field{urlmonth}{1}
-      \field{urlyear}{2023}
-      \field{year}{2023}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://en.wikipedia.org/wiki/Berkeley_Packet_Filter
-      \endverb
-      \verb{url}
-      \verb https://en.wikipedia.org/wiki/Berkeley_Packet_Filter
-      \endverb
-    \endentry
-    \entry{book1}{book}{}
-      \name{author}{1}{}{%
-        {{hash=43886f3c9e02ddddd3c6a84bddf71808}{%
-           family={Rice},
-           familyi={R\bibinitperiod},
-           given={Liz},
-           giveni={L\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {O'Reilly Media, Inc.}%
-      }
-      \strng{namehash}{43886f3c9e02ddddd3c6a84bddf71808}
-      \strng{fullhash}{43886f3c9e02ddddd3c6a84bddf71808}
-      \strng{bibnamehash}{43886f3c9e02ddddd3c6a84bddf71808}
-      \strng{authorbibnamehash}{43886f3c9e02ddddd3c6a84bddf71808}
-      \strng{authornamehash}{43886f3c9e02ddddd3c6a84bddf71808}
-      \strng{authorfullhash}{43886f3c9e02ddddd3c6a84bddf71808}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{1}
-      \field{langid}{english}
-      \field{title}{What Is eBPF?}
-      \field{year}{2022}
-      \verb{urlraw}
-      \verb https://www.oreilly.com/library/view/what-is-ebpf/9781492097266/
-      \endverb
-      \verb{url}
-      \verb https://www.oreilly.com/library/view/what-is-ebpf/9781492097266/
-      \endverb
-    \endentry
     \entry{kernel}{online}{}
       \name{author}{3}{}{%
         {{hash=5579f12b0473820244e38591601a20e1}{%
@@ -171,8 +79,8 @@
       \strng{authorbibnamehash}{3d7dc5c4401e86fa6d87d32042d095b6}
       \strng{authornamehash}{3d7dc5c4401e86fa6d87d32042d095b6}
       \strng{authorfullhash}{3d7dc5c4401e86fa6d87d32042d095b6}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Kernel Probes (Kprobes)}
@@ -202,8 +110,8 @@
       \strng{authorbibnamehash}{50f87cfffa980a23e96f0eff8836b047}
       \strng{authornamehash}{50f87cfffa980a23e96f0eff8836b047}
       \strng{authorfullhash}{50f87cfffa980a23e96f0eff8836b047}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Taming Tracepoints in the Linux Kernel}
@@ -217,6 +125,105 @@
       \endverb
       \verb{url}
       \verb https://blogs.oracle.com/linux/post/taming-tracepoints-in-the-linux-kernel
+      \endverb
+    \endentry
+    \entry{history}{online}{}
+      \name{author}{1}{}{%
+        {{hash=d8648e983929da65e94613da32059bc4}{%
+           family={Carter},
+           familyi={C\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{d8648e983929da65e94613da32059bc4}
+      \strng{fullhash}{d8648e983929da65e94613da32059bc4}
+      \strng{bibnamehash}{d8648e983929da65e94613da32059bc4}
+      \strng{authorbibnamehash}{d8648e983929da65e94613da32059bc4}
+      \strng{authornamehash}{d8648e983929da65e94613da32059bc4}
+      \strng{authorfullhash}{d8648e983929da65e94613da32059bc4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introducing Container Observability with eBPF}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://sysdig.com/blog/introducing-container-observability-with-ebpf-and-sysdig/
+      \endverb
+      \verb{url}
+      \verb https://sysdig.com/blog/introducing-container-observability-with-ebpf-and-sysdig/
+      \endverb
+    \endentry
+    \entry{book1}{book}{}
+      \name{author}{1}{}{%
+        {{hash=43886f3c9e02ddddd3c6a84bddf71808}{%
+           family={Rice},
+           familyi={R\bibinitperiod},
+           given={Liz},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly Media, Inc.}%
+      }
+      \strng{namehash}{43886f3c9e02ddddd3c6a84bddf71808}
+      \strng{fullhash}{43886f3c9e02ddddd3c6a84bddf71808}
+      \strng{bibnamehash}{43886f3c9e02ddddd3c6a84bddf71808}
+      \strng{authorbibnamehash}{43886f3c9e02ddddd3c6a84bddf71808}
+      \strng{authornamehash}{43886f3c9e02ddddd3c6a84bddf71808}
+      \strng{authorfullhash}{43886f3c9e02ddddd3c6a84bddf71808}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{langid}{english}
+      \field{title}{What Is eBPF?}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.oreilly.com/library/view/what-is-ebpf/9781492097266/
+      \endverb
+      \verb{url}
+      \verb https://www.oreilly.com/library/view/what-is-ebpf/9781492097266/
+      \endverb
+    \endentry
+    \entry{bpf}{online}{}
+      \name{author}{2}{}{%
+        {{hash=0325c05dbfea6469f289585ee527feef}{%
+           family={McCannr},
+           familyi={M\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2191d887ae31ebf1ef43a77dc25834c4}{%
+           family={Jacobson},
+           familyi={J\bibinitperiod},
+           given={Van},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{4fdbdecdf58b4bc6233f91e4bee0b759}
+      \strng{fullhash}{4fdbdecdf58b4bc6233f91e4bee0b759}
+      \strng{bibnamehash}{4fdbdecdf58b4bc6233f91e4bee0b759}
+      \strng{authorbibnamehash}{4fdbdecdf58b4bc6233f91e4bee0b759}
+      \strng{authornamehash}{4fdbdecdf58b4bc6233f91e4bee0b759}
+      \strng{authorfullhash}{4fdbdecdf58b4bc6233f91e4bee0b759}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The BSD Packet Filter: A New Architecture for User-level Packet Capture}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.tcpdump.org/papers/bpf-usenix93.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.tcpdump.org/papers/bpf-usenix93.pdf
       \endverb
     \endentry
   \enddatalist
