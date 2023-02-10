@@ -190,6 +190,37 @@
       \verb https://www.oreilly.com/library/view/what-is-ebpf/9781492097266/
       \endverb
     \endentry
+    \entry{B.Gregg}{online}{}
+      \name{author}{1}{}{%
+        {{hash=b45aef384111d7e9dd71b74ba427b5f1}{%
+           family={Gregg},
+           familyi={G\bibinitperiod},
+           given={Brendan},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{b45aef384111d7e9dd71b74ba427b5f1}
+      \strng{fullhash}{b45aef384111d7e9dd71b74ba427b5f1}
+      \strng{bibnamehash}{b45aef384111d7e9dd71b74ba427b5f1}
+      \strng{authorbibnamehash}{b45aef384111d7e9dd71b74ba427b5f1}
+      \strng{authornamehash}{b45aef384111d7e9dd71b74ba427b5f1}
+      \strng{authorfullhash}{b45aef384111d7e9dd71b74ba427b5f1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Linux Extended BPF (eBPF) Tracing Tools}
+      \field{urlday}{10}
+      \field{urlmonth}{2}
+      \field{urlyear}{2023}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.brendangregg.com/ebpf.html
+      \endverb
+      \verb{url}
+      \verb https://www.brendangregg.com/ebpf.html
+      \endverb
+    \endentry
     \entry{bpf}{online}{}
       \name{author}{2}{}{%
         {{hash=0325c05dbfea6469f289585ee527feef}{%
@@ -224,6 +255,270 @@
       \endverb
       \verb{url}
       \verb https://www.tcpdump.org/papers/bpf-usenix93.pdf
+      \endverb
+    \endentry
+    \entry{bpf-doc}{online}{}
+      \name{author}{1}{}{%
+        {{hash=2ff65d9e6ad446ab885f1d783c38af7c}{%
+           family={French},
+           familyi={F\bibinitperiod},
+           given={Steve},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{2ff65d9e6ad446ab885f1d783c38af7c}
+      \strng{fullhash}{2ff65d9e6ad446ab885f1d783c38af7c}
+      \strng{bibnamehash}{2ff65d9e6ad446ab885f1d783c38af7c}
+      \strng{authorbibnamehash}{2ff65d9e6ad446ab885f1d783c38af7c}
+      \strng{authornamehash}{2ff65d9e6ad446ab885f1d783c38af7c}
+      \strng{authorfullhash}{2ff65d9e6ad446ab885f1d783c38af7c}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{BPF Documentation}
+      \field{urlday}{10}
+      \field{urlmonth}{2}
+      \field{urlyear}{2023}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.kernel.org/doc/html/latest/bpf/index.html
+      \endverb
+      \verb{url}
+      \verb https://www.kernel.org/doc/html/latest/bpf/index.html
+      \endverb
+    \endentry
+    \entry{bcc}{online}{}
+      \name{author}{1}{}{%
+        {{hash=bd0ea7806a32e6f6bda45656cfefcf63}{%
+           family={Project},
+           familyi={P\bibinitperiod},
+           given={IO\bibnamedelima Visor},
+           giveni={I\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{bd0ea7806a32e6f6bda45656cfefcf63}
+      \strng{fullhash}{bd0ea7806a32e6f6bda45656cfefcf63}
+      \strng{bibnamehash}{bd0ea7806a32e6f6bda45656cfefcf63}
+      \strng{authorbibnamehash}{bd0ea7806a32e6f6bda45656cfefcf63}
+      \strng{authornamehash}{bd0ea7806a32e6f6bda45656cfefcf63}
+      \strng{authorfullhash}{bd0ea7806a32e6f6bda45656cfefcf63}
+      \field{extraname}{1}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{BPF Compiler Collection (BCC)}
+      \field{urlday}{10}
+      \field{urlmonth}{2}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/iovisor/bcc
+      \endverb
+      \verb{url}
+      \verb https://github.com/iovisor/bcc
+      \endverb
+    \endentry
+    \entry{bpftrace}{online}{}
+      \name{author}{1}{}{%
+        {{hash=bd0ea7806a32e6f6bda45656cfefcf63}{%
+           family={Project},
+           familyi={P\bibinitperiod},
+           given={IO\bibnamedelima Visor},
+           giveni={I\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{bd0ea7806a32e6f6bda45656cfefcf63}
+      \strng{fullhash}{bd0ea7806a32e6f6bda45656cfefcf63}
+      \strng{bibnamehash}{bd0ea7806a32e6f6bda45656cfefcf63}
+      \strng{authorbibnamehash}{bd0ea7806a32e6f6bda45656cfefcf63}
+      \strng{authornamehash}{bd0ea7806a32e6f6bda45656cfefcf63}
+      \strng{authorfullhash}{bd0ea7806a32e6f6bda45656cfefcf63}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{bpftrace}
+      \field{urlday}{10}
+      \field{urlmonth}{2}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/iovisor/bpftrace
+      \endverb
+      \verb{url}
+      \verb https://github.com/iovisor/bpftrace
+      \endverb
+    \endentry
+    \entry{seccomp}{online}{}
+      \name{author}{1}{}{%
+        {{hash=729670cd9d39b9b575390147a29d51d7}{%
+           family={Corbet},
+           familyi={C\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{729670cd9d39b9b575390147a29d51d7}
+      \strng{fullhash}{729670cd9d39b9b575390147a29d51d7}
+      \strng{bibnamehash}{729670cd9d39b9b575390147a29d51d7}
+      \strng{authorbibnamehash}{729670cd9d39b9b575390147a29d51d7}
+      \strng{authornamehash}{729670cd9d39b9b575390147a29d51d7}
+      \strng{authorfullhash}{729670cd9d39b9b575390147a29d51d7}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{eBPF seccomp() filters}
+      \field{urlday}{11}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://lwn.net/Articles/857228/
+      \endverb
+      \verb{url}
+      \verb https://lwn.net/Articles/857228/
+      \endverb
+    \endentry
+    \entry{lsm}{online}{}
+      \name{author}{3}{}{%
+        {{hash=a0217233bf378f4311fb4eac0015a13c}{%
+           family={Smalley},
+           familyi={S\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod}}}%
+        {{hash=cf8ab7ba0a3edaaec4eff167a5470b60}{%
+           family={Fraser},
+           familyi={F\bibinitperiod},
+           given={Timothy},
+           giveni={T\bibinitperiod}}}%
+        {{hash=f159a4f413614057893fb0c9fdda4fd1}{%
+           family={Vance},
+           familyi={V\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{fceb009771dbaac63a14fa66de4175d5}
+      \strng{fullhash}{fceb009771dbaac63a14fa66de4175d5}
+      \strng{bibnamehash}{fceb009771dbaac63a14fa66de4175d5}
+      \strng{authorbibnamehash}{fceb009771dbaac63a14fa66de4175d5}
+      \strng{authornamehash}{fceb009771dbaac63a14fa66de4175d5}
+      \strng{authorfullhash}{fceb009771dbaac63a14fa66de4175d5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Linux Security Modules: General Security Hooks for Linux}
+      \field{urlday}{10}
+      \field{urlmonth}{2}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.kernel.org/security/lsm.html
+      \endverb
+      \verb{url}
+      \verb https://docs.kernel.org/security/lsm.html
+      \endverb
+    \endentry
+    \entry{lsm-usage}{online}{}
+      \name{author}{1}{}{%
+        {{hash=2ff65d9e6ad446ab885f1d783c38af7c}{%
+           family={French},
+           familyi={F\bibinitperiod},
+           given={Steve},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{2ff65d9e6ad446ab885f1d783c38af7c}
+      \strng{fullhash}{2ff65d9e6ad446ab885f1d783c38af7c}
+      \strng{bibnamehash}{2ff65d9e6ad446ab885f1d783c38af7c}
+      \strng{authorbibnamehash}{2ff65d9e6ad446ab885f1d783c38af7c}
+      \strng{authornamehash}{2ff65d9e6ad446ab885f1d783c38af7c}
+      \strng{authorfullhash}{2ff65d9e6ad446ab885f1d783c38af7c}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Linux Security Module Usage}
+      \field{urlday}{10}
+      \field{urlmonth}{2}
+      \field{urlyear}{2023}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.kernel.org/doc/html/v4.15/admin-guide/LSM/index.html
+      \endverb
+      \verb{url}
+      \verb https://www.kernel.org/doc/html/v4.15/admin-guide/LSM/index.html
+      \endverb
+    \endentry
+    \entry{krsi}{online}{}
+      \name{author}{1}{}{%
+        {{hash=87ff12865ed4d1c753a8f56759891751}{%
+           family={Edge},
+           familyi={E\bibinitperiod},
+           given={Jake},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{87ff12865ed4d1c753a8f56759891751}
+      \strng{fullhash}{87ff12865ed4d1c753a8f56759891751}
+      \strng{bibnamehash}{87ff12865ed4d1c753a8f56759891751}
+      \strng{authorbibnamehash}{87ff12865ed4d1c753a8f56759891751}
+      \strng{authornamehash}{87ff12865ed4d1c753a8f56759891751}
+      \strng{authorfullhash}{87ff12865ed4d1c753a8f56759891751}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Kernel runtime security instrumentation}
+      \field{urlday}{11}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://lwn.net/Articles/798157/
+      \endverb
+      \verb{url}
+      \verb https://lwn.net/Articles/798157/
+      \endverb
+    \endentry
+    \entry{krsi-sm}{online}{}
+      \name{author}{1}{}{%
+        {{hash=729670cd9d39b9b575390147a29d51d7}{%
+           family={Corbet},
+           familyi={C\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{729670cd9d39b9b575390147a29d51d7}
+      \strng{fullhash}{729670cd9d39b9b575390147a29d51d7}
+      \strng{bibnamehash}{729670cd9d39b9b575390147a29d51d7}
+      \strng{authorbibnamehash}{729670cd9d39b9b575390147a29d51d7}
+      \strng{authornamehash}{729670cd9d39b9b575390147a29d51d7}
+      \strng{authorfullhash}{729670cd9d39b9b575390147a29d51d7}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{KRSI — the other BPF security module}
+      \field{urlday}{10}
+      \field{urlmonth}{2}
+      \field{urlyear}{2023}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://lwn.net/Articles/808048/
+      \endverb
+      \verb{url}
+      \verb https://lwn.net/Articles/808048/
       \endverb
     \endentry
   \enddatalist

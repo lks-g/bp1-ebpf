@@ -4,34 +4,32 @@
 \contentsline {section}{\numberline {1}Teoretické základy eBPF}{2}{section.2}%
 \contentsline {subsection}{\numberline {1.1}História eBPF}{2}{subsection.3}%
 \contentsline {subsection}{\numberline {1.2}Princípy eBPF}{3}{subsection.4}%
-\contentsline {subsubsection}{\numberline {1.2.1}Ako funguje eBPF}{4}{subsubsection.5}%
+\contentsline {subsubsection}{\numberline {1.2.1}Ako funguje eBPF}{3}{subsubsection.5}%
 \contentsline {subsubsection}{\numberline {1.2.2}Vstupné body pre eBPF}{4}{subsubsection.6}%
 \contentsline {subsubsection}{\numberline {1.2.3}Ako sa tvoria programy eBPF}{5}{subsubsection.7}%
 \contentsline {subsection}{\numberline {1.3}Architektúra eBPF}{5}{subsection.8}%
 \contentsline {subsubsection}{\numberline {1.3.1}Kompilátor JIT}{5}{subsubsection.9}%
 \contentsline {subsubsection}{\numberline {1.3.2}eBPF Maps}{6}{subsubsection.10}%
 \contentsline {subsubsection}{\numberline {1.3.3}eBPF Helpers}{6}{subsubsection.11}%
-\contentsline {subsection}{\numberline {1.4}eBPF nástroje}{7}{subsection.12}%
-\contentsline {subsubsection}{\numberline {1.4.1}Kompilátory}{8}{subsubsection.13}%
-\contentsline {subsubsection}{\numberline {1.4.2}Debuggery}{8}{subsubsection.14}%
-\contentsline {subsubsection}{\numberline {1.4.3}Profilery}{8}{subsubsection.15}%
-\contentsline {subsubsection}{\numberline {1.4.4}Vizualizátory}{9}{subsubsection.16}%
-\contentsline {subsection}{\numberline {1.5}Knižnice eBPF}{9}{subsection.17}%
-\contentsline {subsubsection}{\numberline {1.5.1}Knižnica libbpf}{9}{subsubsection.18}%
-\contentsline {subsubsection}{\numberline {1.5.2}Knižnica BCC}{10}{subsubsection.19}%
-\contentsline {subsubsection}{\numberline {1.5.3}Knižnica eBPF Go}{10}{subsubsection.20}%
-\contentsline {subsection}{\numberline {1.6}Použitie eBPF}{10}{subsection.21}%
-\contentsline {subsubsection}{\numberline {1.6.1}Bezpečnosť a eBPF}{11}{subsubsection.22}%
-\contentsline {subsubsection}{\numberline {1.6.2}Seccomp}{13}{subsubsection.23}%
-\contentsline {subsubsection}{\numberline {1.6.3}LSM}{13}{subsubsection.24}%
-\contentsline {subsubsection}{\numberline {1.6.4}KRSI}{14}{subsubsection.25}%
-\contentsline {section}{\numberline {2}Aplikácie eBPF}{16}{section.26}%
-\contentsline {subsection}{\numberline {2.1}Detekcia útokov}{16}{subsection.27}%
-\contentsline {section}{\numberline {3}Porovnanie eBPF s inými nástrojmi}{17}{section.28}%
-\contentsline {section}{\numberline {4}Implementácia pomocou eBPF}{18}{section.29}%
-\contentsline {section}{\numberline {5}Výsledky implemetácie}{19}{section.35}%
-\contentsline {section}{Z\'{a}ver}{20}{section*.36}%
-\contentsline {section}{Zoznam pou\v {z}itej literat\'{u}ry}{21}{section*.37}%
+\contentsline {subsection}{\numberline {1.4}eBPF nástroje}{6}{subsection.12}%
+\contentsline {subsubsection}{\numberline {1.4.1}Kompilátory}{7}{subsubsection.13}%
+\contentsline {subsubsection}{\numberline {1.4.2}Debuggery}{7}{subsubsection.14}%
+\contentsline {subsection}{\numberline {1.5}Knižnice eBPF}{8}{subsection.15}%
+\contentsline {subsubsection}{\numberline {1.5.1}Knižnica libbpf}{8}{subsubsection.16}%
+\contentsline {subsubsection}{\numberline {1.5.2}Knižnica BCC}{8}{subsubsection.17}%
+\contentsline {subsubsection}{\numberline {1.5.3}Knižnica eBPF Go}{8}{subsubsection.18}%
+\contentsline {subsection}{\numberline {1.6}Použitie eBPF}{9}{subsection.19}%
+\contentsline {subsubsection}{\numberline {1.6.1}Bezpečnosť a eBPF}{10}{subsubsection.20}%
+\contentsline {subsubsection}{\numberline {1.6.2}Seccomp}{11}{subsubsection.21}%
+\contentsline {subsubsection}{\numberline {1.6.3}LSM}{12}{subsubsection.22}%
+\contentsline {subsubsection}{\numberline {1.6.4}KRSI}{13}{subsubsection.23}%
+\contentsline {section}{\numberline {2}Aplikácie eBPF}{14}{section.24}%
+\contentsline {subsection}{\numberline {2.1}Detekcia útokov}{14}{subsection.25}%
+\contentsline {section}{\numberline {3}Porovnanie eBPF s inými nástrojmi}{15}{section.26}%
+\contentsline {section}{\numberline {4}Implementácia pomocou eBPF}{16}{section.27}%
+\contentsline {section}{\numberline {5}Výsledky implemetácie}{17}{section.33}%
+\contentsline {section}{Z\'{a}ver}{18}{section*.34}%
+\contentsline {section}{Zoznam pou\v {z}itej literat\'{u}ry}{19}{section*.35}%
 \babel@toc {slovak}{}\relax 
 \babel@toc {slovak}{}\relax 
 \babel@toc {slovak}{}\relax 
@@ -59,6 +57,60 @@
 \babel@toc {english}{}\relax 
 \babel@toc {slovak}{}\relax 
 \babel@toc {english}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
+\babel@toc {slovak}{}\relax 
 \babel@toc {slovak}{}\relax 
 \babel@toc {slovak}{}\relax 
 \babel@toc {slovak}{}\relax 

@@ -2375,7 +2375,27 @@
     <bcf:citekey order="1" intorder="3">oracle</bcf:citekey>
     <bcf:citekey order="1" intorder="4">history</bcf:citekey>
     <bcf:citekey order="1" intorder="5">book1</bcf:citekey>
+    <bcf:citekey order="1" intorder="6">B.Gregg</bcf:citekey>
     <bcf:citekey order="2" intorder="1">bpf</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">book1</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">eBPF</bcf:citekey>
+    <bcf:citekey order="4" intorder="2">bpf-doc</bcf:citekey>
+    <bcf:citekey order="4" intorder="3">book1</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">eBPF</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">eBPF</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">eBPF</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">eBPF</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">bcc</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">bpftrace</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">eBPF</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">eBPF</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">bcc</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">eBPF</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">seccomp</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">lsm</bcf:citekey>
+    <bcf:citekey order="16" intorder="2">lsm-usage</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">krsi</bcf:citekey>
+    <bcf:citekey order="17" intorder="2">krsi-sm</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
