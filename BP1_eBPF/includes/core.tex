@@ -310,7 +310,7 @@ Pre používanie KRSI, je potrebné mať verziu jadra, ktorá podporuje eBPF. Po
 funkciám jadra pomocou mechanizmu KRSI. To umožňuje, aby sa programy eBPF spustili vždy, keď sa tieto funkcie zavolajú, čo umožňuje dynamické 
 presadzovanie bezpečnostných politík. V prípade zabezpečenia operačného systému sa KRSI dá použiť na monitorovanie systému a zhromažďovanie údajov 
 o akomkoľvek podozrivom správaní, ako je napríklad pokus o neoprávnený prístup. KRSI exportuje novú hierarchiu súborového systému 
-pod \texttt{/sys/kernel/security/bpf} s jedným súborom pre každý hook. Na daný hook môže byť pripojených viac ako jeden program a pri 
+pod \texttt{/sys/kernel/security/bpf} s jedným súborom pre každý hook.~\cite{krsi-sm} Na daný hook môže byť pripojených viac ako jeden program a pri 
 každom volaní sa postupne zavolajú všetky pripojené programy BPF. Ak niektorý program BPF vráti chybový stav, požadovaná akcia sa zamietne.
 
 \section{Aplikácie eBPF}

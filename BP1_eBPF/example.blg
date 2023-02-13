@@ -1,14 +1,14 @@
 [0] Config.pm:306> INFO - This is Biber 2.18
 [0] Config.pm:309> INFO - Logfile is 'example.blg'
-[200] biber-MSWIN64:340> INFO - === 
-[262] Biber.pm:418> INFO - Reading 'example.bcf'
-[464] Biber.pm:978> INFO - Found 15 citekeys in bib section 0
-[492] Biber.pm:4401> INFO - Processing section 0
-[514] Biber.pm:4592> INFO - Looking for bibtex file 'includes/bibliography.bib' for section 0
-[590] bibtex.pm:1713> INFO - LaTeX decoding ...
-[621] bibtex.pm:1518> INFO - Found BibTeX data source 'includes/bibliography.bib'
-[777] UCollate.pm:68> INFO - Overriding locale 'sk-SK' defaults 'variable = shifted' with 'variable = non-ignorable'
-[777] UCollate.pm:68> INFO - Overriding locale 'sk-SK' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[777] Biber.pm:4221> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'sk-SK'
-[802] bbl.pm:654> INFO - Writing 'example.bbl' with encoding 'UTF-8'
-[813] bbl.pm:757> INFO - Output to example.bbl
+[334] biber-MSWIN64:340> INFO - === 
+[453] Biber.pm:418> INFO - Reading 'example.bcf'
+[682] Biber.pm:978> INFO - Found 15 citekeys in bib section 0
+[731] Biber.pm:4401> INFO - Processing section 0
+[767] Biber.pm:4592> INFO - Looking for bibtex file 'includes/bibliography.bib' for section 0
+[851] bibtex.pm:1713> INFO - LaTeX decoding ...
+[889] bibtex.pm:1518> INFO - Found BibTeX data source 'includes/bibliography.bib'
+[1084] UCollate.pm:68> INFO - Overriding locale 'sk-SK' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1084] UCollate.pm:68> INFO - Overriding locale 'sk-SK' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1084] Biber.pm:4221> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'sk-SK'
+[1143] bbl.pm:654> INFO - Writing 'example.bbl' with encoding 'UTF-8'
+[1155] bbl.pm:757> INFO - Output to example.bbl

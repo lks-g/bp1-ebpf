@@ -2396,6 +2396,7 @@
     <bcf:citekey order="16" intorder="2">lsm-usage</bcf:citekey>
     <bcf:citekey order="17" intorder="1">krsi</bcf:citekey>
     <bcf:citekey order="17" intorder="2">krsi-sm</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">krsi-sm</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
