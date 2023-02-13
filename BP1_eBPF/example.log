@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.11.25) (preloaded format=pdflatex 2022.12.8)  10 FEB 2023 22:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.11.25) (preloaded format=pdflatex 2022.12.8)  13 FEB 2023 17:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/endyg/Desktop/bp1-ebpf/BP1_eBPF/example.tex
-(c:/Users/endyg/Desktop/bp1-ebpf/BP1_eBPF/example.tex
+**"d:/School/__STU/Semester 5/BP1/bp1-ebpf/BP1_eBPF/example.tex"
+(d:/School/__STU/Semester 5/BP1/bp1-ebpf/BP1_eBPF/example.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2022-11-02> (FEIstyle.cls
 Document Class: FEIstyle 2020/05/13 v. 1.6.1 Thesis template - FEI STUBA
@@ -1157,14 +1157,14 @@ Package logreq Info: Writing requests to 'example.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  31222 strings out of 475281
- 546214 string characters out of 2780631
+ 546392 string characters out of 2780631
  1434875 words of memory out of 3000000
  51930 multiletter control sequences out of 15000+600000
  528896 words of font info for 150 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 123i,5n,131p,2278b,4652s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 123i,6n,131p,2288b,4652s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {D:/Main/Programs/MikTeX/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{D:/Main/Programs/MikTeX/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<D:/Main/Programs/MikTeX/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><D:/Main/Programs/MikTeX/MiKTeX/fonts/type1/public/lm/lmr12.pfb><D:/Main/Programs/MikTeX/MiKTeX/fonts/type1/public/lm/lmri12.pfb><D:/Main/Programs/MikTeX/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on example.pdf (28 pages, 220463 bytes).
+Output written on example.pdf (28 pages, 220294 bytes).
 PDF statistics:
  387 PDF objects out of 1000 (max. 8388607)
  79 named destinations out of 1000 (max. 500000)

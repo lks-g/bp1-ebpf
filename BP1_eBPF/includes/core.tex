@@ -49,7 +49,7 @@ Medzi hlavné princípy eBPF patrí:
 eBPF je nástroj, ktorý sa používa na filtrovanie sieťovej aktivity, sledovanie výkonu a implementáciu bezpečnostných politík v operačných systémoch Linux. 
 Jeho kľúčovým princípom je používanie \emph{bytecode} interpreteru, pomocou ktorého je schopný vykonávať rôzne operácie. eBPF programy sú riadené udalosťami a 
 spúšťajú sa, keď jadro alebo aplikácia prejde určitým bodom ktorý nazývame \hyperref[sec:hooks]{vstupný bod alebo \emph{hook}}.  Po úspešnej kompilácií 
-programu do bajtkódu a validácií sa eBPF program nahrá, do jadra Linuxu. Tento program sa potom spustí pri každom prechode zvoleným hákom. 
+programu do bajtkódu a validácií sa eBPF program nahrá, do jadra Linuxu. Tento program sa potom spustí pri každom prechode zvoleným bodom/hookom. 
 eBPF program sa skladá z viacerých častí, ktoré sú zodpovedné za rôzne úlohy. Program môže filtrovať pakety, ukladať informácie do máp, vykonávať výpočty 
 a rozhodovať o tom, či má byť paket ponechaný alebo zahodený. Mapou sa označuje jedna z dôležitých funkcií eBPF, ktorá umožňuje ukladať dáta v kerneli 
 do hash tabuliek, ktoré sa potom dajú použiť na rôzne účely, napríklad sledovanie výkonu aplikácií, alebo na implementáciu rôznych bezpečnostných politík. 
@@ -264,6 +264,7 @@ Tento krok zahŕňa:
 
 \subsubsection{Seccomp}
 Následujúca sekcia je vypracovaná podľa ~\cite{seccomp}
+
 Jedným z prvých použití virtuálneho stroja BPF mimo siete bola implementácia politík kontroly prístupu pre systémové volanie seccomp(). 
 \emph{Secure computing mode} alebo seccomp je bezpečnostná funkcia jadra Linux, ktorá umožňuje obmedzenie systémových volaní (\emph{syscalls}), 
 ktoré môžu byť vykonávané procesom. Jedná sa o jednoduchý, ale flexibilný mechanizmus sandboxingu, ktorý sa široko používa. 
@@ -280,30 +281,32 @@ a implementáciu dobrej bezpečnostnej politiky.
 
 \subsubsection{LSM}
 Následujúca sekcia je vypracovaná podľa internetovej stránky~\cite{lsm,lsm-usage}
+
 \emph{Linux Security Modules} v skratke LSM je rozšírenie operačného systému Linux, ktoré umožňuje pridávať rôzne moduly pre zlepšenie zabezpečenia. 
 BPF je jedným z týchto modulov, ktorý môže byť použitý na rôzne účely, vrátane zlepšenia bezpečnosti operačného systému. BPF môže byť nakonfigurovaný tak, 
 aby filtroval sieťový prenos na základe rôznych kritérií, ako napríklad IP adresy, porty alebo protokoly. Týmto spôsobom môžete zabrániť 
 nežiaducim sieťovým prenosom, ako sú napríklad útoky DDoS, a zlepšiť zabezpečenie siete. Ďalším spôsobom, ako je možné použiť LSM BPF 
 na zlepšenie bezpečnosti operačného systému, je kontrolou prístupu k systémovým objektom, ako sú súbory alebo procesy. Nastavením eBPF tak, 
-aby kontroloval prístup k týmto objektom na základe rôznych kritérií, ako napríklad užívateľského mena alebo skupiny. Týmto spôsobom je možné 
+aby kontroloval prístup napríklad na základe užívateľského mena alebo skupiny. Týmto spôsobom je možné 
 zlepšiť kontrolu prístupu k dôležitým systémovým objektom a zvýšiť bezpečnosť operačného systému. Framework bezpečnostného modulu Linuxu (LSM) 
-poskytuje mechanizmus na pripojenie rôznych bezpečnostných kontrol pomocou nových rozšírení jadra. Primárnymi používateľmi rozhrania LSM 
+poskytuje mechanizmus na pripojenie rôznych bezpečnostných kontrol pomocou rozšírení jadra. Primárnymi používateľmi rozhrania LSM 
 sú rozšírenia \textbf{MAC} (\emph{Mandatory Access Control}), ktoré poskytujú komplexnú bezpečnostnú politiku. Okrem väčších rozšírení MAC možno pomocou 
 rozhrania LSM vytvárať aj ďalšie rozšírenia, ktoré poskytujú špecifické zmeny fungovania systému, ak tieto úpravy nie sú k dispozícii 
 v základnej funkcii samotného systému Linux. Z pohľadu bezpečnostného správania sa lepšie mapuje na LSM ako na filtre seccomp, 
-ktoré sú založené na zachytávaní systémových volaní. Rôzne bezpečnostné správanie sa môže realizovať prostredníctvom viacerých systémových volaní, 
-takže by bolo ľahké jedno alebo viacero z nich prehliadnuť, zatiaľ čo LSM hooks zachytávajú správanie, ktoré je predmetom záujmu. 
-Zámerom je, aby eBPF pomocné funkcie boli "presné a granulárne". Na rozdiel od API sledovania BPF nebudú mať všeobecný prístup k vnútorným dátovým štruktúram jadra. 
+ktoré sú založené na zachytávaní systémových volaní. Pri filtri seccomp sa bezpečnostné správanie môže realizovať prostredníctvom viacerých systémových volaní, 
+pričom je ľahké jedno alebo viacero z nich prehliadnuť, zatiaľ čo LSM hooks zachytávajú správanie, ktoré je predmetom záujmu. 
+Zámerom je, aby pomocné eBPF funkcie boli "presné a granulárne".
 
 \subsubsection{KRSI}
 Následujúca sekcia je vypracovaná podľa internetovej stránky~\cite{krsi,krsi-sm}
+
 \emph{Kernel Runtime Security Instrumentation}, alebo v skratke KRSI je koncepcia, ktorá umožňuje vykonávať vlastný kód v jadre operačného systému v reálnom čase, 
 čo umožňuje vykonávať rôzne bezpečnostné úlohy. Hlavným cieľom je sledovať celkové správanie systému za účelom odhalenia útokov.  
 eBPF je jazyk a platforma pre KRSI, ktorá umožňuje vývojárom naprogramovať vlastné eBPF programy, ktoré môžu byť spustené v jadre operačného systému. 
 Tieto programy môžu byť využité na rôzne úlohy, ako napríklad monitorovanie siete, detekciu útokov, bezpečnostnú kontrolu prístupu k súborom, a podobne. 
 \subsection*{Ako používať KRSI}
-Prototyp KRSI je implementovaný ako bezpečnostný modul Linuxu (LSM), ktorý umožňuje pripojenie programov eBPF k bezpečnostným hákom jadra. 
-Ak chcete používať KRSI, musíte mať najprv jadro, ktoré podporuje eBPF. Po načítaní eBPF programov do jadra ich možno pripojiť k rôznym 
+Prototyp KRSI je implementovaný ako bezpečnostný modul Linuxu (LSM), ktorý umožňuje pripojenie programov eBPF k bezpečnostným hookom jadra. 
+Pre používanie KRSI, je potrebné mať verziu jadra, ktorá podporuje eBPF. Po načítaní eBPF programov do jadra ich možno pripojiť k rôznym 
 funkciám jadra pomocou mechanizmu KRSI. To umožňuje, aby sa programy eBPF spustili vždy, keď sa tieto funkcie zavolajú, čo umožňuje dynamické 
 presadzovanie bezpečnostných politík. V prípade zabezpečenia operačného systému sa KRSI dá použiť na monitorovanie systému a zhromažďovanie údajov 
 o akomkoľvek podozrivom správaní, ako je napríklad pokus o neoprávnený prístup. KRSI exportuje novú hierarchiu súborového systému 

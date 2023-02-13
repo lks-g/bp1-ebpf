@@ -1,6 +1,6 @@
-PWD c:\Users\endyg\Desktop\bp1-ebpf\BP1_eBPF
+PWD d:\School\__STU\Semester 5\BP1\bp1-ebpf\BP1_eBPF
 INPUT C:\Users\endyg\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\endyg\Desktop\bp1-ebpf\BP1_eBPF\example.tex
+INPUT d:\School\__STU\Semester 5\BP1\bp1-ebpf\BP1_eBPF\example.tex
 OUTPUT example.log
 INPUT .\FEIstyle.cls
 INPUT .\FEIstyle.cls
